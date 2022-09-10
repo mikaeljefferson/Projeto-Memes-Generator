@@ -4,7 +4,23 @@ window.onload = function (){
     const memeImage = document.getElementById('meme-image');
     const inputImg = document.getElementById('meme-insert');
 
-    function 
+    function memeTextAdder(event) {
+        const input = event.target;
+        memeText.innerText = input.value;
+      }
+      
+      inputText.addEventListener('keyup', memeTextAdder);
+      
+     
+      
+      function memeImgAdder() {
+        const imageURL = URL.createObjectURL(inputImg.files[0]);
+        memeImage.src = imageURL;
+        memeText.style.position = 'absolute';
+        memeText.style.top = '85%';
+      }
+      
+      inputImg.addEventListener('change', memeImgAdder);
 
 
 

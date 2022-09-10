@@ -5,7 +5,25 @@
 body {
     background-color: aquamarine;
 }
-#meme-image {
+#meme-image-container {
     background-color: white;
     border: solid black 1px; 
+    display: flex;
+    position: relative;
+    top: 30px;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+#meme-text {
+    left: 100px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;;
+}
+
+#meme-image{
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
 }
