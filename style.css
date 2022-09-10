@@ -5,3 +5,7 @@
 body {
     background-color: aquamarine;
 }
+#meme-image {
+    background-color: white;
+    border: solid black 1px; 
+}
