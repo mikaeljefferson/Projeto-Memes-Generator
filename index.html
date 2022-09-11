@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section >
-    <input type="text" id="text-input" maxlength="60"  >
-    <input type="file" name="file" id="meme-insert">
-    <section id="meme-image-container"  >
-        <img alt="imagem do meme" id="meme-image">
+<section id="main-container" >
+    <h1>MEMEMAKER</h1>
+    <section> <label for="text-input">Texto:</label>
+        <input type="text" id="text-input" maxlength="60"  ></section>
+   
+    
+        <section> <label for="file">imagem:</label>
+            <input type="file" name="file" id="meme-insert"></section>
+    
+    <section id="meme-image-container">
+        <img alt="imagem do meme" id="meme-image" accept="image/*">  >
 			<p id="meme-text"></p>
     </section>
 </section>

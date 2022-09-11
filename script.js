@@ -16,8 +16,7 @@ window.onload = function (){
       function memeImgAdder() {
         const imageURL = URL.createObjectURL(inputImg.files[0]);
         memeImage.src = imageURL;
-        memeText.style.position = 'absolute';
-        memeText.style.top = '85%';
+        
       }
       
       inputImg.addEventListener('change', memeImgAdder);
